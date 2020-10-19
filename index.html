@@ -151,18 +151,6 @@
               Virtual private networks (VPC), máquinas virtuales, volúmenes, snapshots, balanceadores de carga y mucho más para lanzar tus aplicaciones. 
             </p>
 
-            <div class="row align-items-center">
-
-              <div class="col-sm-2 mb-4">
-                <img src="img/Epyc-AMD-Color-Logo.wine.svg" class="mx-auto" style="width: 80px;" alt="">
-              </div>
-              
-              <div class="col-sm-2 mb-4">
-                <img src="img/NVM Express.svg" class="mx-auto" style="width: 80px;" alt="">
-              </div>
-
-            </div>
-
           </div>
           
         </div>
@@ -176,6 +164,19 @@
             <p>
               Todo nuestro infraestructura está basada en procesadores AMD EPYC con discos en estado sólido SSD NVMe para un alto rendimiento.
             </p>
+
+            <div class="row align-items-center">
+
+              <div class="col-sm-2 mb-4">
+                <img src="img/Epyc-AMD-Color-Logo.wine.svg" class="mx-auto" style="width: 80px;" alt="">
+              </div>
+              
+              <div class="col-sm-2 mb-4">
+                <img src="img/NVM Express.svg" class="mx-auto" style="width: 80px;" alt="">
+              </div>
+
+            </div>
+            
           </div>
         </div>
 
@@ -239,9 +240,6 @@ Local</a></h4>
               <p class="description">Nuestro data center está localizado en Bogotá Colombia y nos seguiremos extendiendo por la región Andina.</p>
             </div>
           </div>
-
-
-
 
         </div>
 
@@ -565,7 +563,7 @@ Local</a></h4>
           <p>Altos profesionales y arduos trabajadores componen el equipo de Kuasar</p>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-lg-3 col-md-6 wow fadeInUp">
             <div class="member">
@@ -573,7 +571,7 @@ Local</a></h4>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Juan Miguel Quiroz</h4>
-                  <span>Chief Executive Officer</span>
+                  <span>Chief Operating Officer</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
@@ -591,7 +589,7 @@ Local</a></h4>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Ricardo Andrés Pertuz</h4>
-                  <span>Product Manager</span>
+                  <span>CTO</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
@@ -609,7 +607,7 @@ Local</a></h4>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Kevin Castillo</h4>
-                  <span>CTO</span>
+                  <span>CEO</span>
                   <div class="social">
                     <a href=""><i class="fa fa-twitter"></i></a>
                     <a href=""><i class="fa fa-facebook"></i></a>
@@ -621,7 +619,7 @@ Local</a></h4>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <!--<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="member">
               <img src="img/team-4.jpg" class="img-fluid" alt="">
               <div class="member-info">
@@ -637,12 +635,13 @@ Local</a></h4>
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
 
         </div>
 
       </div>
-    </section><!-- #team -->
+    </section>
+    <!-- #team -->
 
     <!--==========================
       Clients Section
@@ -749,7 +748,8 @@ Local</a></h4>
             <div class="form">
               <div id="sendmessage">Tu mensaje ha sido enviado. ¡Gracias por Contactarnos!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+
+              <form action="" method="post" role="form" class="contactForm" name="contacto" id ="contacto">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Por favor, introduce al menos 4 caracteres" />
