@@ -106,11 +106,12 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Kuasar</h3>
+          <!--<h3>Kuasar</h3>>-->
+          <img class="col-12 mainLogo" src="img/Logo Original Horizontal.png" alt="">
           <p>Desarrollando el futuro de la región. </p>
         </header>
 
-        <div class="row about-container">
+        <div class="row about-container" style="display: none;">
 
           <div class="col-lg-6 content order-lg-1 order-2">
 
@@ -140,11 +141,38 @@
         </div>
 
         <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img id="imgService1" src="img/Servicio Infraestructura.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h4 class="TituloServicio">Infraestructura como servicio</h4>
+            <p>
+              Virtual private networks (VPC), máquinas virtuales, volúmenes, snapshots, balanceadores de carga y mucho más para lanzar tus aplicaciones. 
+            </p>
+
+            <div class="row align-items-center">
+
+              <div class="col-sm-2 mb-4">
+                <img src="img/Epyc-AMD-Color-Logo.wine.svg" class="mx-auto" style="width: 80px;" alt="">
+              </div>
+              
+              <div class="col-sm-2 mb-4">
+                <img src="img/NVM Express.svg" class="mx-auto" style="width: 80px;" alt="">
+              </div>
+
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class="row about-extra">
           <div class="col-lg-6 wow fadeInUp">
-            <img src="img/about-extra-1.svg" class="img-fluid" alt="">
+            <img id="imgService2" src="img/about-extra-1.svg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>Rendimiento increíble.</h4>
+            <h4 class="TituloServicio">Rendimiento increíble.</h4>
             <p>
               Todo nuestro infraestructura está basada en procesadores AMD EPYC con discos en estado sólido SSD NVMe para un alto rendimiento.
             </p>
@@ -157,7 +185,7 @@
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4>Kubernetes como servicio.</h4>
+            <h4 class="TituloServicio">Kubernetes como servicio.</h4>
             <p>
              Despliega un cluster de Kubernetes en cuestión de minutos y gestiona pods, deployments y servicios desde nuestro portal. 
             </p>
