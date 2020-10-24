@@ -173,26 +173,30 @@ h6 {
   position: relative;
   background: url("") center bottom no-repeat;
   background-size: cover;
-  padding: 200px 0 120px 0;
-}
-#introBlog .intro-img {
-  width: 50%;
-  float: right;
+  padding: 120px 0 50px 0;
+  margin: auto;
+  border-bottom: 1xp gray;
 }
 #introBlog .intro-img {
   width: 65%;
   float: right;
 }
 #introBlog .intro-info {
-  width: 50%;
+  width:30%;
   float: left;
+  padding-left: 0;
+  padding-right: 0;
 }
+#introBlog .intro-info p {
+  font-size: 18px;
 
+}
 #introBlog .intro-info h2 {
   color: #004483;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 48px;
   font-weight: 700;
+  margin: 50px auto;
 }
 #introBlog .intro-info .btn-get-started,
 #introBlog .intro-info .btn-services {
@@ -233,34 +237,43 @@ h6 {
 # INVITE Section
 --------------------------------------------------------------*/
 #Invite{
-  margin: auto;
-  margin-top: -50px;
-  margin-bottom: 50px;
-  width: 80%;
-  
+  margin: 50px auto 50px;
+  width: 100%;
 }
-#Invite .card-group .card{
+#Invite .Card-group{
+  margin: 0 auto;
+}
+#Invite .Card-group .Card{
+  width: 30%;
+  height: 300px;
   margin-right: 20px;
   border-radius: 8px;
-  -webkit-box-shadow: 7px 17px 21px 0px rgba(143,104,46,0.27);
-  -moz-box-shadow: 7px 17px 21px 0px rgba(143,104,46,0.27);
-  box-shadow: 7px 17px 21px 0px rgba(143,104,46,0.27);
-  background-color: rgb(243, 239, 243);
+  -webkit-box-shadow: 16px -20px 21px -1px rgba(233,232,237,1);
+  -moz-box-shadow: 16px -20px 21px -1px rgba(233,232,237,1);
+  box-shadow: 16px -20px 21px -1px rgba(233,232,237,1);
+  background-color: rgb(252, 233, 217);
+  background: rgb(240,136,0);
+  background: linear-gradient(300deg, rgba(240,136,0,0.5) 5%, rgba(248,173,0,0.5) 67%);
 }
 
-#Invite .card-group .card p{
+#Invite .Card-group .Card .Card-body p{
   font-size: 12px;
-  margin: 10px 40px;
+  margin: 20px 10px;
 }
-#Invite .card .card-body .card-title{
+
+#Invite .Card .Card-body .Card-title{
   margin: 10px 40px;
   font-size: 18px;
   color: #EC6D05;
   font-weight: 700;
   text-align: center;
 }
-#Invite .card-group .card .card-img-top{
-  max-width: 35%;
+#Invite .Card .Card-body .Card-text{
+  margin: 0;
+  padding: 0;
+}
+#Invite .Card-group .Card .Card-img-top{
+  width: 50%;
   margin-bottom: 0;
   margin: auto;
 }
@@ -1470,6 +1483,40 @@ background: linear-gradient(321deg, rgba(0,69,132,1) 14%, rgba(53,67,94,1) 67%);
     font-size: 28px;
     padding: 8px 0;
   }
+  #introBlog {
+    padding: 140px 0 0px 0;
+  }
+  #introBlog .intro-img {
+    width: 100%;
+    float: none;
+    margin: 0 auto 0px auto;
+  }
+  #introBlog .intro-info {
+    width: 90%;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  #introBlog .intro-info h2{
+    Margin-top: 0px;
+  }
+  #Invite {
+    width: 100%;
+  }
+  #Invite .Card-group {
+    width: 100%;
+    float: none;
+    margin: 0 auto 25px auto;
+  }
+  #Invite .Card-group .Card {
+    width: 30%;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  #Invite .Card-group .Card .Card-img-top{
+    width: 70%;
+  }
 
   #intro {
     padding: 140px 0 60px 0;
@@ -1492,7 +1539,11 @@ background: linear-gradient(321deg, rgba(0,69,132,1) 14%, rgba(53,67,94,1) 67%);
     margin: 0;
   }
 }
-
+@media (max-width: 997px) {
+  #Invite .Card .Card-body .Card-title{
+    margin: 10px 5px;
+  }
+}
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
@@ -1500,6 +1551,34 @@ background: linear-gradient(321deg, rgba(0,69,132,1) 14%, rgba(53,67,94,1) 67%);
 }
 
 @media (max-width: 767px) {
+  #Invite .Card-group {
+    width: 80%;
+  }
+  #Invite .Card-group .Card{
+    margin: 20px;
+  }
+  #Invite .Card-group h5 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  #Invite .Card .Card-body .Card-title{
+    margin: 10px 5px;
+  }
+  #Invite .Card-group .Card .Card-img-top{
+    width: 40%;
+  }
+
+
+  #introBlog .intro-info {
+    width: 100%;
+  }
+
+  #introBlog .intro-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+
   #intro .intro-info {
     width: 100%;
   }
@@ -1530,6 +1609,30 @@ background: linear-gradient(321deg, rgba(0,69,132,1) 14%, rgba(53,67,94,1) 67%);
 }
 
 @media (max-width: 574px) {
+  #Invite  {
+    padding: 00px 0 20px 0;
+  }
+  #Invite .Card-group {
+    width: 80%;
+    padding: 0;
+  }
+  #Invite .Card-group .Card{
+    width: 80%;
+    margin: 20px;
+  }
+  #Invite .Card-group h5 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  #Invite .Card .Card-body .Card-title{
+    margin: 10px 5px;
+  }
+  #Invite .Card-group .Card .Card-img-top{
+    width: 40%;
+  }
+  #introBlog {
+    padding: 100px 0 20px 0;
+  }
   #intro {
     padding: 100px 0 20px 0;
   }
