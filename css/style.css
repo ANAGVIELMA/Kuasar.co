@@ -294,6 +294,10 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
     line-height: 24px;
     margin-bottom: 30px;
   }
+  #hero {
+    background: url(../img/BG\ Doc5@4x-100.jpg) center center;
+    background-size: 260%;
+  }
 }
 
 #hero .btn-get-started {
