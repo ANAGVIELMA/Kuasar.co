@@ -212,12 +212,7 @@ h6 {
   background: url(../img/BG\ Doc5@4x-100.jpg) center center;
   background-size: cover;
   position: relative;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
+  background-attachment: fixed;
 }
 
 #hero:before {
@@ -262,6 +257,17 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
   font-weight: 500;
   border-bottom: 1px #003166 dotted;
 }
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: @screen-) { ... }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 38px;
@@ -280,15 +286,6 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
 
     background: rgba(226, 226, 226, 0.4);
   }
-}
-
-#hero h2 {
-  color: #003166;
-  margin-bottom: 50px;
-  font-size: 24px;
-}
-
-@media (max-width: 768px) {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -296,8 +293,14 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
   }
   #hero {
     background: url(../img/BG\ Doc5@4x-100.jpg) center center;
-    background-size: 260%;
+    background-size: cover;
   }
+}
+
+#hero h2 {
+  color: #003166;
+  margin-bottom: 50px;
+  font-size: 24px;
 }
 
 #hero .btn-get-started {
@@ -328,6 +331,7 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
 }
 #servicesDocs .container{
   padding-top: 10px;
+  justify-content: center;
 }
 #servicesDocs .box {
   padding: 50px 20px;
