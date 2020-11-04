@@ -317,7 +317,7 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
   margin: 10px;
   border: 2px solid #003166;
   color: #fff;
-  float: left;!important  
+  float: left; 
 }
 
 #hero .btn-get-started:hover {

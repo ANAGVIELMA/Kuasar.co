@@ -50,135 +50,130 @@
   </header><!-- #header -->
 
 <main class="pageSingular">
-    <section class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Anthony's Blog</a></h1>
-        
-	    <nav class="navbar navbar-expand-lg navbar-dark" >
-           
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
+    <section class="header text-center">
+      <div class="list-group menuInner">
+        <ul id="men-list" class="list-group wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Cloud Privada Virtual</a>
+            <div id="it-1" class="clearfix" data-parent="#men-list">
+              <a href="#faq1" data-offset="100" class="list-group-item list-group-item-warning subItem">Proyectos</a>
+              <a href="#Item1-VPC" data-offset="100" class="list-group-item list-group-item-warning subItem">VPC</a>
+              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">Subredes públicas y privadas</a>
+            </div>
+          </li>
+          <li>
+            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Acceso Remoto</a>
+            <div id="it-2" class="" data-parent="#men-list">
+              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">Gateway de Internet</a>
+              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">ACL</a>
+              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">Acceso Remoto</a>
+            </div>
+          </li>
 
-			<div id="navigation" class="collapse navbar-collapse flex-column" >
-				<div class="profile-section pt-3 pt-lg-0">
-				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
-					
-					<div class="bio mb-3">Hi, my name is Anthony Doe. Briefly introduce yourself here. You can also provide a link to the about page.<br><a href="about.html">Find out more about me</a></div><!--//bio-->
-					<ul class="social-list list-inline py-3 mx-auto">
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
-			        </ul><!--//social-list-->
-			        <hr> 
-				</div><!--//profile-section-->
-				
-				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item active">
-					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Post</a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
-					</li>
-				</ul>
-				
-				<div class="my-2 my-md-3">
-				    <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
-				</div>
-			</div>
-		</nav>
+        </ul>
+      </div>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark" >
+    </nav>
+    
     </section>
 <!--==========================
   Frequently Asked Questions Section
 ============================-->
+
+
 <section id="faq">
-  <div class="container">
-    <header class="section-header">
+  <div class="container faq">
+
+    <header class="section-header-single">
       <h3>KVM (Kuasar Virtual Machines)</h3>
       <p>
         KVM (Kuasar Virtual Machines) es nuestro servicio IaaS altamente escalable y flexible con las capacidades que te facilitan desplegar máquinas virtuales en cuestión de minutos.
+      </p>
+      <p>
         Con KVM sólo pagas por lo que usas, no requieres contratos ni permanencias que te aten para obtener descuentos, nuestros precios son bajos desde el momento que despliegas hasta cuando dejas de usar nuestra plataforma.
+      </p>
+      <p>
         KVM está inicialmente disponible sólo en Bogotá, Colombia pero seguiremos expandiéndonos por la región. Debido a nuestra baja latencia puedes también usar este servicio para implementaciones de Edge Computing tales como streaming de video y IoT ya que estamos cerca a la fuente de datos y nos seguiremos acercando.
+      </p>
+      <p>
         Actualmente te brindamos múltiples sistemas operativos OpenSource basados en Linux y propietarios como Windows.
+      </p>
+      <p>
         KVM está comprendido por bloques que construyen el ecosistema cloud basado en máquinas virtuales. Haz clic en los enlaces abajo para obtener más información de cada bloque.
       </p>
     </header>
 
     <ul id="faq-list" class="wow fadeInUp">
       <li>
-        <a data-toggle="collapse" class="collapsed" href="#faq1">Cloud Privada Virtual<i class="ion-android-remove"></i></a>
+        <a data-toggle="collapse" class="collapsed" href="#faq1">Cloud Privada Virtual<i class="ion-android-remove icono"></i></a>
         <div id="faq1" class="collapse" data-parent="#faq-list">
           <p>
             Una red privada virtual o VPC es el contenedor que aisla los recursos de computo entre los diferentes usuarios del cloud de Kuasar.
           </p>
-          <h4>Proyectos</h4>
-          <p>
-            Cuando creas una cuenta en Kuasar, el siguiente paso es crear al menos un proyecto. Un proyecto es un contenedor de recursos de cloud y de usuarios que puedes invitar a participar con diferentes roles asociados. Puedes crear tantos proyectos como requieras.
-          </p>
-          <h4>VPC</h4>
-          <p>
-            Es una red aislada y definida por un CIDR (Classless Inter-Domain Routing) privado, ejemplo, 172.16.0.0/16, donde un usuario puede crear subredes públicas y/o privadas dentro del mismo CIDR, un ejemplo de una subred puede ser 172.16.0.0/24, la cual debe estar contenida dentro del CIDR. <br>
-            Kuasar permite crear hasta 5 VPCs por proyecto y cada VPC puede contener máximo 6 subredes. Ni las VPCs ni las subredes tienen un costo. Si un usuario requiere definir más VPCs o subredes que las permitidas, se debe crear un ticket de soporte justificando su requerimiento.
-           </p> 
-           <h4>Subredes públicas y privadas </h4>
-           <p> 
-            En Kuasar definimos 2 tipos de subredes dentro de una VPC, subredes públicas y subredes privadas.  Las subredes públicas son accesibles desde Internet mediante IP públicas con NAT 1a1 (una IP pública a una instancia), balanceadores de carga externos y PortForwarding.  Adicionalmente debes configurar una ACL para que permita el tráfico a la subred. <br>
-            Las subredes privadas sólo permiten la creación de balanceadores internos no accesibles por fuera de la VPCs, por ende, no son viable las IP públicas, ni balanceadores externos ni Port Forwarding, estas subredes se usan para alojar servicios privados como bases de datos. <br>
-            Tantos las subredes publicas como las privadas pueden ser accedidas por el usuario o sitio remoto mediante el uso de VPN Remote access o VPN Site to Site respectivamente, las cuales se definen dentro de la VPC de Kuasar sin necesidad de componentes adicionales.
-            <a href="">Leer más</a> <br>
-            Las VPNs son una forma segura de acceder a los recursos y tienen un <a href="">costo asociado</a>.
+          <a class="anchor" id="top"></a>
+          <h4 id="Item1-Proyect">Proyectos</h4>
+            <p>
+              Cuando creas una cuenta en Kuasar, el siguiente paso es crear al menos un proyecto. Un proyecto es un contenedor de recursos de cloud y de usuarios que puedes invitar a participar con diferentes roles asociados. Puedes crear tantos proyectos como requieras.
+            </p>
+          <a class="anchor" id="top2"></a>
+          <h4 id="Item1-VPC">VPC</h4>
+            <p>
+              Es una red aislada y definida por un CIDR (Classless Inter-Domain Routing) privado, ejemplo, 172.16.0.0/16, donde un usuario puede crear subredes públicas y/o privadas dentro del mismo CIDR, un ejemplo de una subred puede ser 172.16.0.0/24, la cual debe estar contenida dentro del CIDR. <br>
+              Kuasar permite crear hasta 5 VPCs por proyecto y cada VPC puede contener máximo 6 subredes. Ni las VPCs ni las subredes tienen un costo. Si un usuario requiere definir más VPCs o subredes que las permitidas, se debe crear un ticket de soporte justificando su requerimiento.
+            </p> 
+          <h4 id="Item1-SubR">Subredes públicas y privadas </h4>
+            <p> 
+              En Kuasar definimos 2 tipos de subredes dentro de una VPC, subredes públicas y subredes privadas.  Las subredes públicas son accesibles desde Internet mediante IP públicas con NAT 1a1 (una IP pública a una instancia), balanceadores de carga externos y PortForwarding.  Adicionalmente debes configurar una ACL para que permita el tráfico a la subred. <br>
+              Las subredes privadas sólo permiten la creación de balanceadores internos no accesibles por fuera de la VPCs, por ende, no son viable las IP públicas, ni balanceadores externos ni Port Forwarding, estas subredes se usan para alojar servicios privados como bases de datos. <br>
+              Tantos las subredes publicas como las privadas pueden ser accedidas por el usuario o sitio remoto mediante el uso de VPN Remote access o VPN Site to Site respectivamente, las cuales se definen dentro de la VPC de Kuasar sin necesidad de componentes adicionales.
+              <a class="linkInner" href="">Leer más</a> <br>
+            </p>
+            <p>
+              Las VPNs son una forma segura de acceder a los recursos y tienen un <a class="linkInner" href="">costo asociado</a>.
             </p>
         </div>
       </li>
 
       <li>
-        <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="ion-android-remove"></i></a>
+        <a name="itemList2" data-toggle="collapse" href="#faq2" class="collapsed">Acceso Remoto<i class="ion-android-remove icono"></i></a>
         <div id="faq2" class="collapse" data-parent="#faq-list">
           <p>
-            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+            Kuasar brinda múltiples formas de conectarte a tu cloud de manera segura <br>
           </p>
+          <h4>Gateway de Internet</h4>
+          <p>Una VPC en Kuasar ofrece por defecto un Gateway que permite salida a Internet tanto para subredes públicas como privadas a través de la técnica Source NAT, sin embargo, este acceso se puede restringir mediante la definición de una ACL asociada a una subred en particular.<br>
+            El Gateway de Internet ofrece servicio de DHCP a la VPC, si el usuario no define una IP para una máquina virtual puede obtener una IP privada de manera automática dentro la subred donde se definió. <br>
+            El Gateway de Internet también ofrece el servicio DNS que permite resolver nombres a IP dentro de la VPC y hacia internet. El servicio DNS registra el nombre de las máquinas creadas y permite su resolución dentro de la VPC. <br>
+            SEn Kuasar desplegamos estos Gateway de Internet de manera redundante para ofrecer mayor fiabilidad a nuestros usuarios. </p>
+          <h4>ACL</h4>
+          <p>Una ACL o Lista de Control de Acceso controla el tráfico dentro de una subred. Cada VPC tiene 2 ACLs por defecto, "permitir todo" y "denegar todo". Sin embargo, es posible crear nuevas ACL con permisos específicos. Cada subred dentro de una VPC puede tener asignada una ACL diferente o reusar la misma.</p>
+          <h4>Acceso Remoto</h4>
+            <h5>VPN Site to Site</h5>
+            <p>Puedes crear una o varias VPNs IPsec desde una VPC existente a un sitio remoto, de esta forma podas ingresar directamente a administrar tu cloud. <br>
+              Cada túnel IPsec creado tiene un costo asociado. El límite de VPN permitidas por VPC es de 4. 
+            </p>  
+            <h5>VPN L2TP Over IPSEC</h5>
+            <p>Adicionalmente puedes crear una VPN tipo L2TP Over IPsec por cada VPC. Esta VPN permite establecer conexión a usuarios móviles desde dispositivos basados en Linux, MacOS y Windows. El número máximo de usuarios permitidos son 8. Esta VPN tiene un valor asociado. </p>
+            <h5>IP Pública </h5>
+            <p>Para cada instancia creada dentro de una VPC, es viable asignar una dirección IP pública 1 a 1, lo cual se conoce como <em>Static NAT</em>, de esta forma y configurando la ACL, se puede permitir el acceso remoto a una máquina virtual desde una IP pública en Internet y desde ahí poder hacer conexión con el resto del ambiente. Sin embargo, esta forma es menos segura que las VPNs, por lo que en Kuasar configuramos nuestras instancias para que el usuario por defecto del sistema operativo se conecte únicamente con llaves SSH las cuales se deben crear previamente dentro del proyecto. </p>
+            <p>En Kuasar ofrecemos direccionamiento IPv6 público por defecto. Para poder usar direcciones públicas IPv4 se debe crear un ticket con el requerimiento específico. </p>
+            <p>Este método sólo se puede realizar para subredes públicas, en las subredes privadas no es posible configurar IP públicas, por lo que el usuario deberá tener al menos una subred pública, acceder a una instancia pública y luego conectarse al resto de instancias.</p>
+            <h5>Port Forwarding</h5>
+            <p>Otra forma de ingresar a las máquinas virtuales dentro de una VPC es mediante el método PortForwarding, donde se solicita una IP pública y sobre la misma se crean reglas de acceso a las diferentes máquinas virtuales basado en los puertos de destino, de esta forma una sólo IP pública serviría para acceder a una o varias instancias variando únicamente el puerto destino.</p>
+            <p>Ejemplo, la IP1:2201 se puede usar para acceder a la máquina A vía SSH y la misma IP1:2202 a la máquina B por el mismo protocolo SSH. PortForwarding no tiene costo asociado dentro de la plataforma.            </p>
         </div>
       </li>
 
-      <li>
-        <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
+      <!--<li>
+        <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove icono"></i></a>
         <div id="faq3" class="collapse" data-parent="#faq-list">
           <p>
             Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
           </p>
         </div>
-      </li>
+      </li>-->
 
-      <li>
-        <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="ion-android-remove"></i></a>
-        <div id="faq4" class="collapse" data-parent="#faq-list">
-          <p>
-            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
-        <div id="faq5" class="collapse" data-parent="#faq-list">
-          <p>
-            Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
-        <div id="faq6" class="collapse" data-parent="#faq-list">
-          <p>
-            Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-          </p>
-        </div>
-      </li>
 
     </ul>
 
@@ -189,7 +184,7 @@
     <!--=====================================
       Footer
     ============================-->
-    <footer id="footer" class="pageSingular">
+    <footer id="footer">
         <div class="footer-top">
           <div class="container">
             <div class="row">

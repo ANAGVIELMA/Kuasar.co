@@ -15,10 +15,18 @@
   
   #faq #faq-list li {
     border-bottom: 1px solid #ebebeb;
+
   }
-  
+  i.icono{
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+  }
   #faq #faq-list a {
-    padding: 22px 0;
+    padding: 12px 5px;
+    background-color: rgb(238, 237, 236);
+    border-radius: 5px;
+    margin-bottom: 10px;
+
     display: block;
     position: relative;
     font-family: "Montserrat", sans-serif;
@@ -33,10 +41,15 @@
     position: absolute;
     right: 0;
     top: 20px;
+    margin-right: 4px;
   }
-  
+  #faq #faq-list h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
   #faq #faq-list p {
     margin-bottom: 20px;
+    font-size: 15px;
   }
   
   #faq #faq-list a.collapse {
@@ -52,20 +65,64 @@
   }
   
 .text-center {
-    position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+
+    padding-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
     left: 0;
-    top: 0;
-    height: 100vh;
+    top: 50px;
     width: 280px;
+    height: 100vh;
     background: rgb(247, 247, 247);
-    color: #fff;
+    color: black;
     text-align: center !important;
     display: block;
 }
 .pageSingular{
-    padding-top: 100px;
+    display: flex;
+    padding-top: 50px;
     position: relative;
-    left: 280px !important;
-    width: 80%;
+    width: 100%;
     background: rgb(247, 247, 247);
+}
+#faq .faq {
+    padding: 30px;
+    border-radius: 6px;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    -webkit-box-shadow: -22px 14px 30px -8px rgba(0,0,0,0.26);
+    -moz-box-shadow: -22px 14px 30px -8px rgba(0,0,0,0.26);
+    box-shadow: -22px 14px 30px -8px rgba(0,0,0,0.26);
+}
+.menuInner{
+
+  height: 100%;
+  width: 280px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+.linkInner{
+  background-color: white !important;
+  font-size: inherit  !important;
+  display: inline  !important;
+  padding: 0 !important;
+}
+.subItem{
+  font-size: 14px;
+  width: 80%;
+  margin: 10px 0 10px auto;
+  padding: 5px;
+  border-radius: 8px;
+}
+.headItem{
+  margin-top: 20px;
+}
+a.anchor {
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
