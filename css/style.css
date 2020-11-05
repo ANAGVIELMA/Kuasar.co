@@ -533,7 +533,9 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
   width: 50%;
   float: left;
 }
-
+#intro .intro-info p{
+  width: 80%;
+}
 #intro .intro-info h2 {
   color: #004483;
   margin-bottom: 40px;
@@ -926,19 +928,29 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
 #about .about-extra {
   padding-top: 60px;
 }
-
+#about .about-extra p{
+  max-height: 450px;
+  align-items: center;
+  margin-left: auto;
+}
 #about .about-extra h4 {
   font-weight: 600;
   font-size: 24px;
+  margin-left: auto;
 }
 .col-lg-6 .content .order-lg-1 .order-2{
   padding-top: 20px;
 }
+
 .TituloServicio{
-  margin-top: 60px;
+ /*margin-top: 60px;*/
+
 }
 #imgService{
   padding-bottom: 0;
+}
+.img-service{
+  max-width: 450px;
 }
 /* Services Section
 --------------------------------*/
@@ -1732,6 +1744,7 @@ background: linear-gradient(321deg, rgba(0,69,132,1) 14%, rgba(53,67,94,1) 67%);
     margin: auto;
     text-align: center;
   }
+
   #introBlog .intro-info h2{
     Margin-top: 0px;
   }
@@ -1769,7 +1782,10 @@ background: linear-gradient(321deg, rgba(0,69,132,1) 14%, rgba(53,67,94,1) 67%);
     margin: auto;
     text-align: center;
   }
-
+  #intro .intro-info p{
+    margin: auto;
+    padding-bottom: 20px;
+  }
   #why-us .card {
     margin: 0;
   }
