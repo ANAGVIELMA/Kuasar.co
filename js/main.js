@@ -110,7 +110,14 @@
       portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
   });
-
+  // Clients carousel (uses the Owl Carousel library)
+  $(".SO-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: { 0: { items: 2 }, 768: { items: 3 }, 900: { items: 5 }, 1200: { items: 5 }
+    }
+  });
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,

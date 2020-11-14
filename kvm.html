@@ -64,12 +64,26 @@
           <li>
             <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Acceso Remoto</a>
             <div id="it-2" class="" data-parent="#men-list">
-              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">Gateway de Internet</a>
-              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">ACL</a>
-              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">Acceso Remoto</a>
+              <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">Gateway de Internet</a>
+              <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">ACL</a>
+              <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">Acceso Remoto</a>
             </div>
           </li>
-
+          <li>
+            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Almacenamiento</a>
+            <div id="it-3" class="" data-parent="#men-list">
+              <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Volúmenes</a>
+              <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Snapshots</a>
+              <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Imágenes</a>
+            </div>
+          </li>
+          <li>
+            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Instancias</a>
+            <div id="it-4" class="" data-parent="#men-list">
+              <a data-toggle="collapse" href="#faq4" class="list-group-item list-group-item-warning subItem">Funcionalidades</a>
+              <a data-toggle="collapse" href="#faq4" class="list-group-item list-group-item-warning subItem">Sistemas Operativos</a>
+            </div>
+          </li>
         </ul>
       </div>
 
@@ -83,25 +97,19 @@
 
 
 <section id="faq">
-  <div class="container faq">
+  <div id="contFaq" class="container faq">
 
     <header class="section-header-single">
       <h3>KVM (Kuasar Virtual Machines)</h3>
-      <p>
-        KVM (Kuasar Virtual Machines) es nuestro servicio IaaS altamente escalable y flexible con las capacidades que te facilitan desplegar máquinas virtuales en cuestión de minutos.
+      <p>KVM (Kuasar Virtual Machines) es nuestro servicio IaaS altamente escalable y flexible con las capacidades que te facilitan desplegar máquinas virtuales en cuestión de minutos.
       </p>
-      <p>
-        Con KVM sólo pagas por lo que usas, no requieres contratos ni permanencias que te aten para obtener descuentos, nuestros precios son bajos desde el momento que despliegas hasta cuando dejas de usar nuestra plataforma.
+      <p>Con KVM sólo pagas por lo que usas, no requieres contratos ni permanencias que te aten para obtener descuentos, nuestros precios son bajos desde el momento que despliegas hasta cuando dejas de usar nuestra plataforma.
       </p>
-      <p>
-        KVM está inicialmente disponible sólo en Bogotá, Colombia pero seguiremos expandiéndonos por la región. Debido a nuestra baja latencia puedes también usar este servicio para implementaciones de Edge Computing tales como streaming de video y IoT ya que estamos cerca a la fuente de datos y nos seguiremos acercando.
+      <p>KVM está inicialmente disponible sólo en Bogotá, Colombia pero seguiremos expandiéndonos por la región. Debido a nuestra baja latencia puedes también usar este servicio para implementaciones de Edge Computing tales como streaming de video y IoT ya que estamos cerca a la fuente de datos y nos seguiremos acercando.
       </p>
-      <p>
-        Actualmente te brindamos múltiples sistemas operativos OpenSource basados en Linux y propietarios como Windows.
+      <p>Actualmente te brindamos múltiples sistemas operativos OpenSource basados en Linux y propietarios como Windows.
       </p>
-      <p>
-        KVM está comprendido por bloques que construyen el ecosistema cloud basado en máquinas virtuales. Haz clic en los enlaces abajo para obtener más información de cada bloque.
-      </p>
+      <p>KVM está comprendido por bloques que construyen el ecosistema cloud basado en máquinas virtuales. Haz clic en los enlaces abajo para obtener más información de cada bloque.</p>
     </header>
 
     <ul id="faq-list" class="wow fadeInUp">
@@ -165,20 +173,64 @@
         </div>
       </li>
 
-      <!--<li>
-        <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove icono"></i></a>
+      <li>
+        <a data-toggle="collapse" href="#faq3" class="collapsed">Almacenamiento <i class="ion-android-remove icono"></i></a>
         <div id="faq3" class="collapse" data-parent="#faq-list">
-          <p>
-            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-          </p>
+          <p>Almacenamiento de alto rendimiento al instante con un precio competitivo, adminístralo mediante nuestro portal web o de manera programática través de nuestras herramientas Devops. Conoce nuestros precios <a class="linkInner" href="">aquí</a>.</p>
+          <h5>Volúmenes</h5>
+          <p>Sólo disponemos para ti de volúmenes SSD NVMe que brindan la mayor velocidad, cada instancia cuenta con al menos un disco duro para el sistema operativo, pero es viable configurar más discos, los cuales puedes adjuntar a las instancias. Puedes desplegar la cantidad de discos que necesites.</p>
+          <p>Todos los volumenes aprovisionados en Kuasar te brindan una alta disponibilidad, lo instalamos en hardware diferente a las instancias y los replicamos en nuestra infraestructura para que nunca pierdas información. </p>   
+          <p>El disco root o principal se crea y se elimina con la máquina virtual, los discos adicionales adjuntados o también conocidos como discos de datos, permanecen disponibles luego de eliminar la instancia a la cual pertenecían, por lo que viable adjuntarlos a otra.</p>
+          <p>El tamaño máximo posible de un volumen es 1TiB, si se requiere más, se aconseja adjuntar varios discos y configurarlo en volúmenes lógicos dentro del sistema operativo para obtener particiones más grandes.</p>
+          <h5>Snapshots</h5>
+          <p>Los snapshots son respaldos de los volúmenes y tienen como propósito proteger la información almacenada, los snapshots se almacenan en discos más lentos por lo que el costo por GB/mes final es menor.</p>
+          <p>Con los snapshots puedes crear nuevos volumenes y adjuntarlo a instancias, adicionalmente puedes generar imagenes booteables para desplegar nuevas instancias, esto es especialmente útil cuando tienes aplicaciones con múltiples nodos.</p>
+          <h5>Imágenes</h5>
+          <p>Las imágenes son plantillas que se pueden crear desde los snapshots o desde los volumenes para crear nuevas instancias. Existen 2 tipos de imagenes en Kuasar, las creadas por nosotros para que puedas lanzar sistemas operativos al instante o las creadas por ti para reusarlas y compartirlas entre tus proyectos o con otros usuarios de nuestra plataforma.</p>
         </div>
-      </li>-->
+      </li>
+      <li>
+        <a data-toggle="collapse" href="#faq4" class="collapsed">Instancias<i class="ion-android-remove icono"></i></a>
+        <div id="faq4" class="collapse" data-parent="#faq-list">
+          <p>Despliega instancias de manera fácil, ágil y flexible mediante un par de clics o de manera programática con nuestras herramientas Devops que te permitirán automatizar tu infraestructura. Conoce nuestros precios <a class="linkInner" href="">aquí</a>.</p>
+          <h5>Múltiples funcionalidades</h5>
+            <h6>DHCP</h6>
+            <p>Por defecto nuestra VPC le configura una IP a tu instancia dentro de la subred donde la incluiste al momento de su creación, o si lo prefieres le puedes definir la ip que requieras pero debes tener en cuenta que debe estar dentro CIDR de la VPC y dentro de la subred que le asignas.</p>
+            <h6>DNS</h6>
+            <p>Adicionalmente podrás desplegar instancias con tu propio dominio y comunicarte por defecto con tus otras instancias dentro de la misma VPC mediante el nombre que le configuraste en el momento de la creación, no necesitas saber la IP.</p>   
+            <h6>IP Adicionales</h6>
+            <p>Una vez lanzada la instancia puedes configurarle a tu interfaz de red, ip secundarias dentro de nuestra plataforma, con esto te damos flexibilidad para tus despliegues más exigentes.</p>
+            <h6>Interfaces adicionales</h6>
+            <p>¿Necesitas interfaces en subredes diferentes?, es posible, adiciona las que necesitas dentro de la subred que requieras.</p>
+            <h6>Llaves SSH</h6>
+            <p>Nuestras imagenes Linux vienen configuradas por defecto para no aceptar contraseñas de acceso para el usuario principal, por lo que deberás crear o cargar la llave publica siempre antes de lanzar una instancia, de esta forma te podrás conectar via SSH para administrarla.</p>
+          <h5>Sistemas Operativos</h5>
+          <p>Múltiples sistemas operativos que se adecuan a tus necesidades:</p>
 
+          <section id="SOP" class="wow fadeInUp">
+            <div class="container">
+              <div class="owl-carousel SO-carousel">
+                <img src="img/LOGO CENTOS.png" alt="">
+                <img src="img/LOGO DEBIAN.png" alt="">
+                <img src="img/LOGO FEDORA.png" alt="">
+                <img src="img/LOGO UBUNTU.png" alt="">
+                <img src="img/LOGO WS.png" alt="">
+                <img src="img/LOGO CENTOS.png" alt="">
+                <img src="img/LOGO DEBIAN.png" alt="">
+                <img src="img/LOGO FEDORA.png" alt="">
+                <img src="img/LOGO UBUNTU.png" alt="">
+                <img src="img/LOGO WS.png" alt="">
+              </div>
+            </div>
+          </section>
+          
+        </div>
+      </li>
 
     </ul>
 
   </div>
-</section><!-- #faq -->
+</section><!-- #faq  wow fadeInUp -->
 
 </main>
     <!--=====================================
@@ -251,7 +303,7 @@
             &copy; Copyright <strong>Kuasar</strong>. All Rights Reserved
           </div>
           <div class="credits">
-            Designed by <a href="http://resilientedifital.online">Resieliente Digital</a>
+            Designed by <a href="http://resilientedigital.online">Resieliente Digital</a>
           </div>
         </div>
     </footer><!-- #footer -->

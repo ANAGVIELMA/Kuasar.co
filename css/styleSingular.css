@@ -126,3 +126,87 @@ a.anchor {
   height: 0;
   visibility: hidden;
 }
+@media (max-width: 576px){
+  .text-center{
+    display: none;
+  }
+}
+@media  (min-width: 576px) and (max-width: 768px){
+  .text-center{
+    display: none;
+    margin: 0;
+    padding: 0;
+  } 
+  #contFaq{
+    width: 100%;
+  }
+  #faq{
+    margin: auto;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .text-center{
+    width: 220px;
+  }
+  .menuInner{
+    width: 200px; 
+  }
+  .list-group-item{
+    font-size: 14px;
+  }
+  .subItem{
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px){  
+  .list-group-item{
+    font-size: 16px;
+  }
+  .subItem{
+    font-size: 14px;
+  }
+  .menuInner{
+    width: 230px; 
+  }
+}
+@media (min-width: 1200px) {
+        
+}
+/* Servers types
+--------------------------------*/
+#SOP {
+  padding: 20px 0;
+  width: 100%;
+  margin: auto;
+}
+
+#SOP img {
+  max-width: 100%;
+  opacity: 0.6;
+  transition: 0.3s;
+  padding: 5px 10px;
+}
+
+#SOP img:hover {
+  opacity: 1;
+}
+
+#SOP .owl-nav,
+#SOP .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#SOP .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: midnightblue;
+}
+
+#SOP .owl-dot.active {
+  background-color: orangered;
+}
