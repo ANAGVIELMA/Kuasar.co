@@ -96,7 +96,7 @@
 ============================-->
 
 
-<section id="faq">
+<section style="text-align: justify;" id="faq">
   <div id="contFaq" class="container faq">
 
     <header class="section-header-single">
@@ -128,6 +128,7 @@
             </p>
           <a class="anchor" id="top2"></a>
           <h4 id="Item1-VPC">VPC</h4>
+          <img class="kvmimagen kvmimgder" src="img/KVM IMG RED.png" alt="">
             <p>
               Es una red aislada y definida por un CIDR (Classless Inter-Domain Routing) privado, ejemplo, 172.16.0.0/16, donde un usuario puede crear subredes públicas y/o privadas dentro del mismo CIDR, un ejemplo de una subred puede ser 172.16.0.0/24, la cual debe estar contenida dentro del CIDR. <br>
               Kuasar permite crear hasta 5 VPCs por proyecto y cada VPC puede contener máximo 6 subredes. Ni las VPCs ni las subredes tienen un costo. Si un usuario requiere definir más VPCs o subredes que las permitidas, se debe crear un ticket de soporte justificando su requerimiento.
@@ -152,6 +153,7 @@
             Kuasar brinda múltiples formas de conectarte a tu cloud de manera segura <br>
           </p>
           <h4>Gateway de Internet</h4>
+          <img class="kvmimagen kvmimgder" src="img/KVM Acceso Remoto.png" alt="">
           <p>Una VPC en Kuasar ofrece por defecto un Gateway que permite salida a Internet tanto para subredes públicas como privadas a través de la técnica Source NAT, sin embargo, este acceso se puede restringir mediante la definición de una ACL asociada a una subred en particular.<br>
             El Gateway de Internet ofrece servicio de DHCP a la VPC, si el usuario no define una IP para una máquina virtual puede obtener una IP privada de manera automática dentro la subred donde se definió. <br>
             El Gateway de Internet también ofrece el servicio DNS que permite resolver nombres a IP dentro de la VPC y hacia internet. El servicio DNS registra el nombre de las máquinas creadas y permite su resolución dentro de la VPC. <br>
