@@ -147,8 +147,15 @@ a.anchor {
   .txtcnt{
     display: none;
   }
+  .kvmimagen{
+    display: block !important;
+  }
 }
 @media  (min-width: 576px) and (max-width: 768px){
+  .kvmimagen{
+    display: block !important;
+    max-width: 350;
+  }
   .txtcnt{
     display: none;
     margin: 0;
