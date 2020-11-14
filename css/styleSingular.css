@@ -1,6 +1,23 @@
 /* Frequently Asked Questions Section
 --------------------------------*/
-
+.kvmimagen{
+  max-width: 300px;
+}
+.kvmimgder{
+  float: right;
+}
+.kvmimgizq{
+  float: left;
+  max-width: 250px;
+}
+header.section-header-single p{
+  text-align: justify;
+}
+header.section-header-single h3{
+  text-align: center;
+  font-weight: 500;
+  color: #004584; 
+}
 #faq {
     padding: 60px 0;
     overflow: hidden;
@@ -64,7 +81,7 @@
     content: "\f2c7" !important;
   }
   
-.text-center {
+.txtcnt {
   position: -webkit-sticky;
   position: sticky;
 
@@ -127,12 +144,12 @@ a.anchor {
   visibility: hidden;
 }
 @media (max-width: 576px){
-  .text-center{
+  .txtcnt{
     display: none;
   }
 }
 @media  (min-width: 576px) and (max-width: 768px){
-  .text-center{
+  .txtcnt{
     display: none;
     margin: 0;
     padding: 0;
@@ -146,7 +163,7 @@ a.anchor {
   }
 }
 @media (min-width: 768px) and (max-width: 991px){
-  .text-center{
+  .txtcnt{
     width: 220px;
   }
   .menuInner{
