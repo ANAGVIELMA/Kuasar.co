@@ -1009,63 +1009,87 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
   line-height: 24px;
   margin-bottom: 0;
 }
-
-#why-us {
-  padding: 60px 0;
-  background: #004584;
+/*FEATURES SECTION------------------------------------------*/
+@media(min-width: 992px) {
+  .block__title {
+    font-size: 2.5rem;
+  }
+}
+.block__title {
+  font-weight: 500  ;
+}
+.px-2 div p.card-2__paragraph{
+  font-size: 15px;
+}
+#product{
+  margin-top: 50px;
+}
+.card-2__symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 3.25rem;
+  width: 3.25rem;
+  border: 1px solid #ED6D05;
+  border-radius: 50%;
+  background: rgb(252, 245, 231);
+  color: #ED6D05;
+}
+.card-2__symbol:hover {
+  border: 7px solid #ED6D05;
 }
 
+.card-2__symbol svg:hover{
+  fill: rgb(252, 245, 231);
+}
+@media(min-width: 992px) {
+  .card-2__symbol {
+    height: 3.8rem;
+    width: 3.8rem;
+  }
+}
+.block__paragraph {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: .9;
+}
+.card-2__title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.46;
+}
+/*------------------------------------------------------------------*/
+#why-us {
+  padding: 0;
+  margin: 0;
+  background: #004584;
+  background-image: url(../img/clients/Artboard\ 2.svg);
+  height: 250px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ColorTransp{
+  background-color: #02162c69;
+  width: 100%;
+  margin: 0;
+  padding: 60px 0 55px 0;
+}
+.btnCTA{
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+}
 #why-us .section-header h3,
 #why-us .section-header p {
   color: #fff;
-}
-
-#why-us .card {
-  background: #00458f;
-  border-color: #00458f;
-  border-radius: 10px;
-  margin: 0 15px;
-  padding: 15px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s ease-in-out;
-  height: 100%;
-}
-#why-us #cardk {
-    background: #EC6D05;
-}
-
-#why-us .card:hover {
-  background: #003b7a;
-  border-color: #003b7a;
-}
-
-#why-us .card i {
-  font-size: 48px;
-  padding-top: 15px;
-  color: #bfddfe;
-}
-
-#why-us .card h5 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#why-us .card p {
-  font-size: 15px;
-  color: #d8eafe;
-}
-
-#why-us .card .readmore {
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
-}
-
-#why-us .card .readmore:hover {
-  border-bottom: #fff solid 2px;
+  font-size: 26px;
+  padding-bottom: 20px;
+  width: 80%;
 }
 
 #why-us .counters {
@@ -1086,10 +1110,6 @@ background: linear-gradient(300deg, rgba(176,168,158,0) 33%, rgba(109, 109, 109,
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #cce5ff;
-}
-.whyLogo{
-    max-width: 70px;
-    margin: auto;
 }
 .counters{
     display: none;
