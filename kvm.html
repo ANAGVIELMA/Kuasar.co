@@ -1,349 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KVM - Kuasar Virtual Machines</title>
     <meta content="Cloud Computing" name="keywords">
     <meta content="Cloud Computing" name="description">
-  <!-- Favicons -->
-  <link href="img/Isotipo.png"     rel="icon">
-  <link href="img/Isotipo.png" rel="apple-touch-icon">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="img/Isotipo.png" rel="icon">
+    <link href="img/Isotipo.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<!--========================================================================
+    <!--========================================================================
   Header
   ==========================================================================-->
-  <header id="headerBlog" class="fixed-top">
-    <div class="container">
+    <header id="headerBlog" class="fixed-top">
+        <div class="container">
 
-      <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-        <a href="index.html" class="scrollto"><img src="img/Logo%20Original%20Horizontal.png" alt="" class="img-fluid"></a>
-      </div>
+            <div class="logo float-left">
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+                <a href="index.html" class="scrollto"><img src="img/Logo%20Original%20Horizontal.png" alt="" class="img-fluid"></a>
+            </div>
 
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-          <li><a href="index.html">Home</a></li> 
-          <li class="active"><a href="Documentacion.html">Documentacion</a></li>
-          <li><a href="Blog.html">Blog</a></li>
-        </ul>
-      </nav><!-- .main-nav -->
-      
-    </div>
-  </header><!-- #header -->
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="drop-down"><a href="">Pricing</a>
+                        <ul>
+                            <li><a href="pricingKVM.html">KVM</a></li>
+                            <!--<li class="drop-down"><a href="#">Drop Down 2</a>
+            <ul>
+              <li><a href="#">Tema 1</a></li>
+              <li><a href="#">Tema 2</a></li>
+              <li><a href="#">Tema 3</a></li>
+              <li><a href="#">Tema 4</a></li>
+              <li><a href="#">Tema 5</a></li>
+            </ul>
+          </li>-->
+                            <li><a href="pricingKKS.html">K8S</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="Documentacion.html">Documentacion</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <!-- .main-nav -->
 
-<main class="pageSingular">
-    <section class="header text-center txtcnt">
-      <div class="list-group menuInner">
-        <ul id="men-list" class="list-group wow fadeInUp">
-          <li>
-            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Cloud Privada Virtual</a>
-            <div id="it-1" class="clearfix" data-parent="#men-list">
-              <a href="#faq1" data-offset="100" class="list-group-item list-group-item-warning subItem">Proyectos</a>
-              <a href="#Item1-VPC" data-offset="100" class="list-group-item list-group-item-warning subItem">VPC</a>
-              <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">Subredes públicas y privadas</a>
-            </div>
-          </li>
-          <li>
-            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Acceso Remoto</a>
-            <div id="it-2" class="" data-parent="#men-list">
-              <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">Gateway de Internet</a>
-              <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">ACL</a>
-              <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">Acceso Remoto</a>
-            </div>
-          </li>
-          <li>
-            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Almacenamiento</a>
-            <div id="it-3" class="" data-parent="#men-list">
-              <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Volúmenes</a>
-              <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Snapshots</a>
-              <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Imágenes</a>
-            </div>
-          </li>
-          <li>
-            <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Instancias</a>
-            <div id="it-4" class="" data-parent="#men-list">
-              <a data-toggle="collapse" href="#faq4" class="list-group-item list-group-item-warning subItem">Funcionalidades</a>
-              <a data-toggle="collapse" href="#faq4" class="list-group-item list-group-item-warning subItem">Sistemas Operativos</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+        </div>
+    </header>
+    <!-- #header -->
 
-	  <nav class="navbar navbar-expand-lg navbar-dark" >
-    </nav>
-    
-    </section>
-<!--==========================
+    <main class="pageSingular">
+        <section class="header text-center txtcnt">
+            <div class="list-group menuInner">
+                <ul id="men-list" class="list-group wow fadeInUp">
+                    <li>
+                        <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Cloud Privada Virtual</a>
+                        <div id="it-1" class="clearfix" data-parent="#men-list">
+                            <a href="#faq1" data-offset="100" class="list-group-item list-group-item-warning subItem">Proyectos</a>
+                            <a href="#Item1-VPC" data-offset="100" class="list-group-item list-group-item-warning subItem">VPC</a>
+                            <a data-toggle="collapse" href="#faq1" class="list-group-item list-group-item-warning subItem">Subredes públicas y privadas</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Acceso Remoto</a>
+                        <div id="it-2" class="" data-parent="#men-list">
+                            <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">Gateway de Internet</a>
+                            <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">ACL</a>
+                            <a data-toggle="collapse" href="#faq2" class="list-group-item list-group-item-warning subItem">Acceso Remoto</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Almacenamiento</a>
+                        <div id="it-3" class="" data-parent="#men-list">
+                            <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Volúmenes</a>
+                            <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Snapshots</a>
+                            <a data-toggle="collapse" href="#faq3" class="list-group-item list-group-item-warning subItem">Imágenes</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" class="list-group-item collapsed headItem" href="#faq1">Instancias</a>
+                        <div id="it-4" class="" data-parent="#men-list">
+                            <a data-toggle="collapse" href="#faq4" class="list-group-item list-group-item-warning subItem">Funcionalidades</a>
+                            <a data-toggle="collapse" href="#faq4" class="list-group-item list-group-item-warning subItem">Sistemas Operativos</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+            </nav>
+
+        </section>
+        <!--==========================
   Frequently Asked Questions Section
 ============================-->
 
 
-<section style="text-align: justify;" id="faq">
-  <div id="contFaq" class="container faq">
+        <section style="text-align: justify;" id="faq">
+            <div id="contFaq" class="container faq">
 
-    <header class="section-header-single">
-      <h3>KVM (Kuasar Virtual Machines)</h3>
-      <img class="kvmimagen kvmimgder" src="img/KVM IMG 1@4x.png" alt="">
-      <p>KVM (Kuasar Virtual Machines) es nuestro servicio IaaS altamente escalable y flexible con las capacidades que te facilitan desplegar máquinas virtuales en cuestión de minutos.
-      </p>
-      <p>Con KVM sólo pagas por lo que usas, no requieres contratos ni permanencias que te aten para obtener descuentos, nuestros precios son bajos desde el momento que despliegas hasta cuando dejas de usar nuestra plataforma.
-      </p>
-      <img class="kvmimagen kvmimgizq" src="img/KVM IMG 1 copia@4x.png" alt="">
-      <p>KVM está inicialmente disponible sólo en Bogotá, Colombia pero seguiremos expandiéndonos por la región. Debido a nuestra baja latencia puedes también usar este servicio para implementaciones de Edge Computing tales como streaming de video y IoT ya que estamos cerca a la fuente de datos y nos seguiremos acercando.
-      </p>
-      <p>Actualmente te brindamos múltiples sistemas operativos OpenSource basados en Linux y propietarios como Windows.
-      </p>
-      <p>KVM está comprendido por bloques que construyen el ecosistema cloud basado en máquinas virtuales. Haz clic en los enlaces abajo para obtener más información de cada bloque.</p>
-    </header>
+                <header class="section-header-single">
+                    <h3>KVM (Kuasar Virtual Machines)</h3>
+                    <img class="kvmimagen kvmimgder" src="img/KVM IMG 1@4x.png" alt="">
+                    <p>KVM (Kuasar Virtual Machines) es nuestro servicio IaaS altamente escalable y flexible con las capacidades que te facilitan desplegar máquinas virtuales en cuestión de minutos.
+                    </p>
+                    <p>Con KVM sólo pagas por lo que usas, no requieres contratos ni permanencias que te aten para obtener descuentos, nuestros precios son bajos desde el momento que despliegas hasta cuando dejas de usar nuestra plataforma.
+                    </p>
+                    <img class="kvmimagen kvmimgizq" src="img/KVM IMG 1 copia@4x.png" alt="">
+                    <p>KVM está inicialmente disponible sólo en Bogotá, Colombia pero seguiremos expandiéndonos por la región. Debido a nuestra baja latencia puedes también usar este servicio para implementaciones de Edge Computing tales como streaming de
+                        video y IoT ya que estamos cerca a la fuente de datos y nos seguiremos acercando.
+                    </p>
+                    <p>Actualmente te brindamos múltiples sistemas operativos OpenSource basados en Linux y propietarios como Windows.
+                    </p>
+                    <p>KVM está comprendido por bloques que construyen el ecosistema cloud basado en máquinas virtuales. Haz clic en los enlaces abajo para obtener más información de cada bloque.</p>
+                </header>
 
-    <ul id="faq-list" class="wow fadeInUp">
-      <li>
-        <a data-toggle="collapse" class="collapsed" href="#faq1">Cloud Privada Virtual<i class="ion-android-remove icono"></i></a>
-        <div id="faq1" class="collapse" data-parent="#faq-list">
-          <p>
-            Una red privada virtual o VPC es el contenedor que aisla los recursos de computo entre los diferentes usuarios del cloud de Kuasar.
-          </p>
-          <a class="anchor" id="top"></a>
-          <h4 id="Item1-Proyect">Proyectos</h4>
-            <p>
-              Cuando creas una cuenta en Kuasar, el siguiente paso es crear al menos un proyecto. Un proyecto es un contenedor de recursos de cloud y de usuarios que puedes invitar a participar con diferentes roles asociados. Puedes crear tantos proyectos como requieras.
-            </p>
-          <a class="anchor" id="top2"></a>
-          <h4 id="Item1-VPC">VPC</h4>
-          <img class="kvmimagen kvmimgder" src="img/KVM IMG RED.png" alt="">
-            <p>
-              Es una red aislada y definida por un CIDR (Classless Inter-Domain Routing) privado, ejemplo, 172.16.0.0/16, donde un usuario puede crear subredes públicas y/o privadas dentro del mismo CIDR, un ejemplo de una subred puede ser 172.16.0.0/24, la cual debe estar contenida dentro del CIDR. <br>
-              Kuasar permite crear hasta 5 VPCs por proyecto y cada VPC puede contener máximo 6 subredes. Ni las VPCs ni las subredes tienen un costo. Si un usuario requiere definir más VPCs o subredes que las permitidas, se debe crear un ticket de soporte justificando su requerimiento.
-            </p> 
-          <h4 id="Item1-SubR">Subredes públicas y privadas </h4>
-            <p> 
-              En Kuasar definimos 2 tipos de subredes dentro de una VPC, subredes públicas y subredes privadas.  Las subredes públicas son accesibles desde Internet mediante IP públicas con NAT 1a1 (una IP pública a una instancia), balanceadores de carga externos y PortForwarding.  Adicionalmente debes configurar una ACL para que permita el tráfico a la subred. <br>
-              Las subredes privadas sólo permiten la creación de balanceadores internos no accesibles por fuera de la VPCs, por ende, no son viable las IP públicas, ni balanceadores externos ni Port Forwarding, estas subredes se usan para alojar servicios privados como bases de datos. <br>
-              Tantos las subredes publicas como las privadas pueden ser accedidas por el usuario o sitio remoto mediante el uso de VPN Remote access o VPN Site to Site respectivamente, las cuales se definen dentro de la VPC de Kuasar sin necesidad de componentes adicionales.
-              <a class="linkInner" href="">Leer más</a> <br>
-            </p>
-            <p>
-              Las VPNs son una forma segura de acceder a los recursos y tienen un <a class="linkInner" href="pricingKVM.html">costo asociado</a>.
-            </p>
-        </div>
-      </li>
+                <ul id="faq-list" class="wow fadeInUp">
+                    <li>
+                        <a data-toggle="collapse" class="collapsed" href="#faq1">Cloud Privada Virtual<i class="ion-android-remove icono"></i></a>
+                        <div id="faq1" class="collapse" data-parent="#faq-list">
+                            <p>
+                                Una red privada virtual o VPC es el contenedor que aisla los recursos de computo entre los diferentes usuarios del cloud de Kuasar.
+                            </p>
+                            <a class="anchor" id="top"></a>
+                            <h4 id="Item1-Proyect">Proyectos</h4>
+                            <p>
+                                Cuando creas una cuenta en Kuasar, el siguiente paso es crear al menos un proyecto. Un proyecto es un contenedor de recursos de cloud y de usuarios que puedes invitar a participar con diferentes roles asociados. Puedes crear tantos proyectos como requieras.
+                            </p>
+                            <a class="anchor" id="top2"></a>
+                            <h4 id="Item1-VPC">VPC</h4>
+                            <img class="kvmimagen kvmimgder" src="img/KVM IMG RED.png" alt="">
+                            <p>
+                                Es una red aislada y definida por un CIDR (Classless Inter-Domain Routing) privado, ejemplo, 172.16.0.0/16, donde un usuario puede crear subredes públicas y/o privadas dentro del mismo CIDR, un ejemplo de una subred puede ser 172.16.0.0/24, la cual debe
+                                estar contenida dentro del CIDR. <br> Kuasar permite crear hasta 5 VPCs por proyecto y cada VPC puede contener máximo 6 subredes. Ni las VPCs ni las subredes tienen un costo. Si un usuario
+                                requiere definir más VPCs o subredes que las permitidas, se debe crear un ticket de soporte justificando su requerimiento.
+                            </p>
+                            <h4 id="Item1-SubR">Subredes públicas y privadas </h4>
+                            <p>
+                                En Kuasar definimos 2 tipos de subredes dentro de una VPC, subredes públicas y subredes privadas. Las subredes públicas son accesibles desde Internet mediante IP públicas con NAT 1a1 (una IP pública a una instancia), balanceadores de carga externos y
+                                PortForwarding. Adicionalmente debes configurar una ACL para que permita el tráfico a la subred. <br> Las subredes privadas sólo permiten la creación de balanceadores internos no accesibles
+                                por fuera de la VPCs, por ende, no son viable las IP públicas, ni balanceadores externos ni Port Forwarding, estas subredes se usan para alojar servicios privados como bases de datos. <br> Tantos las subredes publicas como
+                                las privadas pueden ser accedidas por el usuario o sitio remoto mediante el uso de VPN Remote access o VPN Site to Site respectivamente, las cuales se definen dentro de la VPC de Kuasar sin necesidad de componentes adicionales.
+                                <a class="linkInner" href="">Leer más</a> <br>
+                            </p>
+                            <p>
+                                Las VPNs son una forma segura de acceder a los recursos y tienen un <a class="linkInner" href="pricingKVM.html">costo asociado</a>.
+                            </p>
+                        </div>
+                    </li>
 
-      <li>
-        <a name="itemList2" data-toggle="collapse" href="#faq2" class="collapsed">Acceso Remoto<i class="ion-android-remove icono"></i></a>
-        <div id="faq2" class="collapse" data-parent="#faq-list">
-          <p>
-            Kuasar brinda múltiples formas de conectarte a tu cloud de manera segura <br>
-          </p>
-          <h4>Gateway de Internet</h4>
-          <img class="kvmimagen kvmimgder" src="img/KVM Acceso Remoto.png" alt="">
-          <p>Una VPC en Kuasar ofrece por defecto un Gateway que permite salida a Internet tanto para subredes públicas como privadas a través de la técnica Source NAT, sin embargo, este acceso se puede restringir mediante la definición de una ACL asociada a una subred en particular.<br>
-            El Gateway de Internet ofrece servicio de DHCP a la VPC, si el usuario no define una IP para una máquina virtual puede obtener una IP privada de manera automática dentro la subred donde se definió. <br>
-            El Gateway de Internet también ofrece el servicio DNS que permite resolver nombres a IP dentro de la VPC y hacia internet. El servicio DNS registra el nombre de las máquinas creadas y permite su resolución dentro de la VPC. <br>
-            SEn Kuasar desplegamos estos Gateway de Internet de manera redundante para ofrecer mayor fiabilidad a nuestros usuarios. </p>
-          <h4>ACL</h4>
-          <p>Una ACL o Lista de Control de Acceso controla el tráfico dentro de una subred. Cada VPC tiene 2 ACLs por defecto, "permitir todo" y "denegar todo". Sin embargo, es posible crear nuevas ACL con permisos específicos. Cada subred dentro de una VPC puede tener asignada una ACL diferente o reusar la misma.</p>
-          <h4>Acceso Remoto</h4>
-            <h5>VPN Site to Site</h5>
-            <p>Puedes crear una o varias VPNs IPsec desde una VPC existente a un sitio remoto, de esta forma podas ingresar directamente a administrar tu cloud. <br>
-              Cada túnel IPsec creado tiene un <a class="linkInner" href="pricingKVM.html">costo asociado</a>. El límite de VPN permitidas por VPC es de 4. 
-            </p>  
-            <h5>VPN L2TP Over IPSEC</h5>
-            <p>Adicionalmente puedes crear una VPN tipo L2TP Over IPsec por cada VPC. Esta VPN permite establecer conexión a usuarios móviles desde dispositivos basados en Linux, MacOS y Windows. El número máximo de usuarios permitidos son 8. Esta VPN tiene un valor asociado. </p>
-            <h5>IP Pública </h5>
-            <p>Para cada instancia creada dentro de una VPC, es viable asignar una dirección IP pública 1 a 1, lo cual se conoce como <em>Static NAT</em>, de esta forma y configurando la ACL, se puede permitir el acceso remoto a una máquina virtual desde una IP pública en Internet y desde ahí poder hacer conexión con el resto del ambiente. Sin embargo, esta forma es menos segura que las VPNs, por lo que en Kuasar configuramos nuestras instancias para que el usuario por defecto del sistema operativo se conecte únicamente con llaves SSH las cuales se deben crear previamente dentro del proyecto. </p>
-            <p>En Kuasar ofrecemos direccionamiento IPv6 público por defecto. Para poder usar direcciones públicas IPv4 se debe crear un ticket con el requerimiento específico. </p>
-            <p>Este método sólo se puede realizar para subredes públicas, en las subredes privadas no es posible configurar IP públicas, por lo que el usuario deberá tener al menos una subred pública, acceder a una instancia pública y luego conectarse al resto de instancias.</p>
-            <h5>Port Forwarding</h5>
-            <p>Otra forma de ingresar a las máquinas virtuales dentro de una VPC es mediante el método PortForwarding, donde se solicita una IP pública y sobre la misma se crean reglas de acceso a las diferentes máquinas virtuales basado en los puertos de destino, de esta forma una sólo IP pública serviría para acceder a una o varias instancias variando únicamente el puerto destino.</p>
-            <p>Ejemplo, la IP1:2201 se puede usar para acceder a la máquina A vía SSH y la misma IP1:2202 a la máquina B por el mismo protocolo SSH. PortForwarding no tiene costo asociado dentro de la plataforma.            </p>
-        </div>
-      </li>
+                    <li>
+                        <a name="itemList2" data-toggle="collapse" href="#faq2" class="collapsed">Acceso Remoto<i class="ion-android-remove icono"></i></a>
+                        <div id="faq2" class="collapse" data-parent="#faq-list">
+                            <p>
+                                Kuasar brinda múltiples formas de conectarte a tu cloud de manera segura <br>
+                            </p>
+                            <h4>Gateway de Internet</h4>
+                            <img class="kvmimagen kvmimgder" src="img/KVM Acceso Remoto.png" alt="">
+                            <p>Una VPC en Kuasar ofrece por defecto un Gateway que permite salida a Internet tanto para subredes públicas como privadas a través de la técnica Source NAT, sin embargo, este acceso se puede restringir mediante la definición
+                                de una ACL asociada a una subred en particular.<br> El Gateway de Internet ofrece servicio de DHCP a la VPC, si el usuario no define una IP para una máquina virtual puede obtener una IP privada de manera automática dentro
+                                la subred donde se definió. <br> El Gateway de Internet también ofrece el servicio DNS que permite resolver nombres a IP dentro de la VPC y hacia internet. El servicio DNS registra el nombre de las máquinas creadas y permite
+                                su resolución dentro de la VPC. <br> SEn Kuasar desplegamos estos Gateway de Internet de manera redundante para ofrecer mayor fiabilidad a nuestros usuarios. </p>
+                            <h4>ACL</h4>
+                            <p>Una ACL o Lista de Control de Acceso controla el tráfico dentro de una subred. Cada VPC tiene 2 ACLs por defecto, "permitir todo" y "denegar todo". Sin embargo, es posible crear nuevas ACL con permisos específicos. Cada subred
+                                dentro de una VPC puede tener asignada una ACL diferente o reusar la misma.</p>
+                            <h4>Acceso Remoto</h4>
+                            <h5>VPN Site to Site</h5>
+                            <p>Puedes crear una o varias VPNs IPsec desde una VPC existente a un sitio remoto, de esta forma podas ingresar directamente a administrar tu cloud. <br> Cada túnel IPsec creado tiene un <a class="linkInner" href="pricingKVM.html">costo asociado</a>.
+                                El límite de VPN permitidas por VPC es de 4.
+                            </p>
+                            <h5>VPN L2TP Over IPSEC</h5>
+                            <p>Adicionalmente puedes crear una VPN tipo L2TP Over IPsec por cada VPC. Esta VPN permite establecer conexión a usuarios móviles desde dispositivos basados en Linux, MacOS y Windows. El número máximo de usuarios permitidos son
+                                8. Esta VPN tiene un valor asociado. </p>
+                            <h5>IP Pública </h5>
+                            <p>Para cada instancia creada dentro de una VPC, es viable asignar una dirección IP pública 1 a 1, lo cual se conoce como <em>Static NAT</em>, de esta forma y configurando la ACL, se puede permitir el acceso remoto a una máquina
+                                virtual desde una IP pública en Internet y desde ahí poder hacer conexión con el resto del ambiente. Sin embargo, esta forma es menos segura que las VPNs, por lo que en Kuasar configuramos nuestras instancias para que el
+                                usuario por defecto del sistema operativo se conecte únicamente con llaves SSH las cuales se deben crear previamente dentro del proyecto. </p>
+                            <p>En Kuasar ofrecemos direccionamiento IPv6 público por defecto. Para poder usar direcciones públicas IPv4 se debe crear un ticket con el requerimiento específico. </p>
+                            <p>Este método sólo se puede realizar para subredes públicas, en las subredes privadas no es posible configurar IP públicas, por lo que el usuario deberá tener al menos una subred pública, acceder a una instancia pública y luego
+                                conectarse al resto de instancias.</p>
+                            <h5>Port Forwarding</h5>
+                            <p>Otra forma de ingresar a las máquinas virtuales dentro de una VPC es mediante el método PortForwarding, donde se solicita una IP pública y sobre la misma se crean reglas de acceso a las diferentes máquinas virtuales basado
+                                en los puertos de destino, de esta forma una sólo IP pública serviría para acceder a una o varias instancias variando únicamente el puerto destino.</p>
+                            <p>Ejemplo, la IP1:2201 se puede usar para acceder a la máquina A vía SSH y la misma IP1:2202 a la máquina B por el mismo protocolo SSH. PortForwarding no tiene costo asociado dentro de la plataforma. </p>
+                        </div>
+                    </li>
 
-      <li>
-        <a data-toggle="collapse" href="#faq3" class="collapsed">Almacenamiento <i class="ion-android-remove icono"></i></a>
-        <div id="faq3" class="collapse" data-parent="#faq-list">
-          <p>Almacenamiento de alto rendimiento al instante con un precio competitivo, adminístralo mediante nuestro portal web o de manera programática través de nuestras herramientas Devops. Conoce nuestros precios <a class="linkInner" href="">aquí</a>.</p>
-          <h5>Volúmenes</h5>
-          <p>Sólo disponemos para ti de volúmenes SSD NVMe que brindan la mayor velocidad, cada instancia cuenta con al menos un disco duro para el sistema operativo, pero es viable configurar más discos, los cuales puedes adjuntar a las instancias. Puedes desplegar la cantidad de discos que necesites.</p>
-          <p>Todos los volumenes aprovisionados en Kuasar te brindan una alta disponibilidad, lo instalamos en hardware diferente a las instancias y los replicamos en nuestra infraestructura para que nunca pierdas información. </p>   
-          <p>El disco root o principal se crea y se elimina con la máquina virtual, los discos adicionales adjuntados o también conocidos como discos de datos, permanecen disponibles luego de eliminar la instancia a la cual pertenecían, por lo que viable adjuntarlos a otra.</p>
-          <p>El tamaño máximo posible de un volumen es 1TiB, si se requiere más, se aconseja adjuntar varios discos y configurarlo en volúmenes lógicos dentro del sistema operativo para obtener particiones más grandes.</p>
-          <h5>Snapshots</h5>
-          <p>Los snapshots son respaldos de los volúmenes y tienen como propósito proteger la información almacenada, los snapshots se almacenan en discos más lentos por lo que el costo por GB/mes final es menor.</p>
-          <p>Con los snapshots puedes crear nuevos volumenes y adjuntarlo a instancias, adicionalmente puedes generar imagenes booteables para desplegar nuevas instancias, esto es especialmente útil cuando tienes aplicaciones con múltiples nodos.</p>
-          <h5>Imágenes</h5>
-          <p>Las imágenes son plantillas que se pueden crear desde los snapshots o desde los volumenes para crear nuevas instancias. Existen 2 tipos de imagenes en Kuasar, las creadas por nosotros para que puedas lanzar sistemas operativos al instante o las creadas por ti para reusarlas y compartirlas entre tus proyectos o con otros usuarios de nuestra plataforma.</p>
-        </div>
-      </li>
-      <li>
-        <a data-toggle="collapse" href="#faq4" class="collapsed">Instancias<i class="ion-android-remove icono"></i></a>
-        <div id="faq4" class="collapse" data-parent="#faq-list">
-          <p>Despliega instancias de manera fácil, ágil y flexible mediante un par de clics o de manera programática con nuestras herramientas Devops que te permitirán automatizar tu infraestructura. Conoce nuestros precios <a class="linkInner" href="">aquí</a>.</p>
-          <h5>Múltiples funcionalidades</h5>
-            <h6>DHCP</h6>
-            <p>Por defecto nuestra VPC le configura una IP a tu instancia dentro de la subred donde la incluiste al momento de su creación, o si lo prefieres le puedes definir la ip que requieras pero debes tener en cuenta que debe estar dentro CIDR de la VPC y dentro de la subred que le asignas.</p>
-            <h6>DNS</h6>
-            <img class="kvmimagen kvmimgder" src="img/KVM Nube.png" alt="">
-            <p>Adicionalmente podrás desplegar instancias con tu propio dominio y comunicarte por defecto con tus otras instancias dentro de la misma VPC mediante el nombre que le configuraste en el momento de la creación, no necesitas saber la IP.</p>   
-            <h6>IP Adicionales</h6>
-            <p>Una vez lanzada la instancia puedes configurarle a tu interfaz de red, ip secundarias dentro de nuestra plataforma, con esto te damos flexibilidad para tus despliegues más exigentes.</p>
-            <h6>Interfaces adicionales</h6>
-            <p>¿Necesitas interfaces en subredes diferentes?, es posible, adiciona las que necesitas dentro de la subred que requieras.</p>
-            <h6>Llaves SSH</h6>
-            <p>Nuestras imagenes Linux vienen configuradas por defecto para no aceptar contraseñas de acceso para el usuario principal, por lo que deberás crear o cargar la llave publica siempre antes de lanzar una instancia, de esta forma te podrás conectar via SSH para administrarla.</p>
-          <h5>Sistemas Operativos</h5>
-          <p>Múltiples sistemas operativos que se adecuan a tus necesidades:</p>
+                    <li>
+                        <a data-toggle="collapse" href="#faq3" class="collapsed">Almacenamiento <i class="ion-android-remove icono"></i></a>
+                        <div id="faq3" class="collapse" data-parent="#faq-list">
+                            <p>Almacenamiento de alto rendimiento al instante con un precio competitivo, adminístralo mediante nuestro portal web o de manera programática través de nuestras herramientas Devops. Conoce nuestros precios <a class="linkInner"
+                                    href="">aquí</a>.</p>
+                            <h5>Volúmenes</h5>
+                            <p>Sólo disponemos para ti de volúmenes SSD NVMe que brindan la mayor velocidad, cada instancia cuenta con al menos un disco duro para el sistema operativo, pero es viable configurar más discos, los cuales puedes adjuntar a las
+                                instancias. Puedes desplegar la cantidad de discos que necesites.</p>
+                            <p>Todos los volumenes aprovisionados en Kuasar te brindan una alta disponibilidad, lo instalamos en hardware diferente a las instancias y los replicamos en nuestra infraestructura para que nunca pierdas información. </p>
+                            <p>El disco root o principal se crea y se elimina con la máquina virtual, los discos adicionales adjuntados o también conocidos como discos de datos, permanecen disponibles luego de eliminar la instancia a la cual pertenecían,
+                                por lo que viable adjuntarlos a otra.</p>
+                            <p>El tamaño máximo posible de un volumen es 1TiB, si se requiere más, se aconseja adjuntar varios discos y configurarlo en volúmenes lógicos dentro del sistema operativo para obtener particiones más grandes.</p>
+                            <h5>Snapshots</h5>
+                            <p>Los snapshots son respaldos de los volúmenes y tienen como propósito proteger la información almacenada, los snapshots se almacenan en discos más lentos por lo que el costo por GB/mes final es menor.</p>
+                            <p>Con los snapshots puedes crear nuevos volumenes y adjuntarlo a instancias, adicionalmente puedes generar imagenes booteables para desplegar nuevas instancias, esto es especialmente útil cuando tienes aplicaciones con múltiples
+                                nodos.
+                            </p>
+                            <h5>Imágenes</h5>
+                            <p>Las imágenes son plantillas que se pueden crear desde los snapshots o desde los volumenes para crear nuevas instancias. Existen 2 tipos de imagenes en Kuasar, las creadas por nosotros para que puedas lanzar sistemas operativos
+                                al instante o las creadas por ti para reusarlas y compartirlas entre tus proyectos o con otros usuarios de nuestra plataforma.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#faq4" class="collapsed">Instancias<i class="ion-android-remove icono"></i></a>
+                        <div id="faq4" class="collapse" data-parent="#faq-list">
+                            <p>Despliega instancias de manera fácil, ágil y flexible mediante un par de clics o de manera programática con nuestras herramientas Devops que te permitirán automatizar tu infraestructura. Conoce nuestros precios <a class="linkInner"
+                                    href="">aquí</a>.</p>
+                            <h5>Múltiples funcionalidades</h5>
+                            <h6>DHCP</h6>
+                            <p>Por defecto nuestra VPC le configura una IP a tu instancia dentro de la subred donde la incluiste al momento de su creación, o si lo prefieres le puedes definir la ip que requieras pero debes tener en cuenta que debe estar
+                                dentro CIDR de la VPC y dentro de la subred que le asignas.</p>
+                            <h6>DNS</h6>
+                            <img class="kvmimagen kvmimgder" src="img/KVM Nube.png" alt="">
+                            <p>Adicionalmente podrás desplegar instancias con tu propio dominio y comunicarte por defecto con tus otras instancias dentro de la misma VPC mediante el nombre que le configuraste en el momento de la creación, no necesitas saber
+                                la IP.</p>
+                            <h6>IP Adicionales</h6>
+                            <p>Una vez lanzada la instancia puedes configurarle a tu interfaz de red, ip secundarias dentro de nuestra plataforma, con esto te damos flexibilidad para tus despliegues más exigentes.</p>
+                            <h6>Interfaces adicionales</h6>
+                            <p>¿Necesitas interfaces en subredes diferentes?, es posible, adiciona las que necesitas dentro de la subred que requieras.</p>
+                            <h6>Llaves SSH</h6>
+                            <p>Nuestras imagenes Linux vienen configuradas por defecto para no aceptar contraseñas de acceso para el usuario principal, por lo que deberás crear o cargar la llave publica siempre antes de lanzar una instancia, de esta forma
+                                te podrás conectar via SSH para administrarla.</p>
+                            <h5>Sistemas Operativos</h5>
+                            <p>Múltiples sistemas operativos que se adecuan a tus necesidades:</p>
 
-          <section id="SOP" class="wow fadeInUp">
-            <div class="container">
-              <div class="owl-carousel SO-carousel">
-                <img src="img/LOGO CENTOS.png" alt="">
-                <img src="img/LOGO DEBIAN.png" alt="">
-                <img src="img/LOGO FEDORA.png" alt="">
-                <img src="img/LOGO UBUNTU.png" alt="">
-                <img src="img/LOGO WS.png" alt="">
-                <img src="img/LOGO CENTOS.png" alt="">
-                <img src="img/LOGO DEBIAN.png" alt="">
-                <img src="img/LOGO FEDORA.png" alt="">
-                <img src="img/LOGO UBUNTU.png" alt="">
-                <img src="img/LOGO WS.png" alt="">
-              </div>
+                            <section id="SOP" class="wow fadeInUp">
+                                <div class="container">
+                                    <div class="owl-carousel SO-carousel">
+                                        <img src="img/LOGO CENTOS.png" alt="">
+                                        <img src="img/LOGO DEBIAN.png" alt="">
+                                        <img src="img/LOGO FEDORA.png" alt="">
+                                        <img src="img/LOGO UBUNTU.png" alt="">
+                                        <img src="img/LOGO WS.png" alt="">
+                                        <img src="img/LOGO CENTOS.png" alt="">
+                                        <img src="img/LOGO DEBIAN.png" alt="">
+                                        <img src="img/LOGO FEDORA.png" alt="">
+                                        <img src="img/LOGO UBUNTU.png" alt="">
+                                        <img src="img/LOGO WS.png" alt="">
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </li>
+
+                </ul>
+
             </div>
-          </section>
-          
-        </div>
-      </li>
+        </section>
+        <!-- #faq  wow fadeInUp -->
 
-    </ul>
-
-  </div>
-</section><!-- #faq  wow fadeInUp -->
-
-</main>
-  <!--==========================
+    </main>
+    <!--==========================
     Footer
   ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-3 col-md-6 footer-info">-->
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h3>KUASAR</h3>
+                        <p>Kuasar ofrece tecnologías disruptivas en Cloud Computing, para LatinoAmerica. Nos caracteriza la innovación y la accesibilidad para nuestros clientes</p>
+                    </div>
+                    <!--  <div class="col-lg-2 col-md-6 footer-links"> -->
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>NAVEGA</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Acerca de Nosotros</a></li>
+                            <li><a href="#">Información Legal</a></li>
+                            <li><a href="#">Terminos de Servicios</a></li>
+                            <li><a href="#">Políticas</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-lg-2 col-md-6 footer-links"> -->
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>ENLACES</h4>
+                        <ul>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="kvm.html">KVM <br> <span style="font-size: x-small;">(Kuasar Virtual Machine)</span> </a></li>
+                            <li><a href="#">K8S <br><span style="font-size: x-small;">(Kuasar Kubernetes Service)</span></a></li>
+                            <li><a href="#">Centro de Soporte</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-lg-2 col-md-6 footer-contact"> -->
+                    <div class="col-lg-2 col-md-6 footer-contact">
+                        <h4>Contáctanos</h4>
+                        <p>
+                            AV. Cra. 7 # 56-61 <br> Bogotá, Colombia<br> Colombia <br>
+                            <strong>Teléfono:<br></strong> <a style="text-decoration: none;" href="tel:+573508896828"> +57 (350) 889-6828</a><br>
+                            <strong>Email:</strong> <a href="mailto:info@kuasar.co">info@kuasar.co</a><br>
+                        </p>
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>KUASAR</h3>
-            <p>Kuasar ofrece tecnologías disruptivas en Cloud Computing, para LatinoAmerica. Nos caracteriza la innovación y la accesibilidad para nuestros clientes</p>
-          </div>
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <!--<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
+                            <!--<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>-->
+                            <!--<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>-->
+                            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                        </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>NAVEGA</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Acerca de Nosotros</a></li>
-              <li><a href="#">Información Legal</a></li>
-              <li><a href="#">Terminos de Servicios</a></li>
-              <li><a href="#">Políticas</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>ENLACES</h4>
-            <ul>
-              <li><a href="Blog.html">Blog</a></li>
-              <li><a href="kvm.html">KVM <br> <span style="font-size: x-small;">(Kuasar Virtual Machine)</span> </a></li>
-              <li><a href="#">KKS <br><span style="font-size: x-small;">(Kuasar Kubernetes Service)</span></a></li>
-              <li><a href="#">Centro de Soporte</a></li>
-              <li><a href="#">Status</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 footer-contact">
-            <h4>Contáctanos</h4>
-            <p>
-              AV. Cra. 7 # 56-61 <br>
-              Bogotá, Colombia<br>
-              Colombia <br>
-              <strong>Teléfono:<br></strong> <a style="text-decoration: none;" href="tel:+57350889682"> +57 (350) 889-682</a><br>
-              <strong>Email:</strong> <a href="mailto:info@kuasar.co">info@kuasar.co</a><br>
-            </p>
+                    </div>
 
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <!--<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
-              <!--<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>-->
-              <!--<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>-->
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <!--<div class="col-lg-3 col-md-6 footer-newsletter">
+                    <h4>Boletín Informativo</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+                </div>-->
+
+                </div>
             </div>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Boletín Informativo</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
-            </form>
-          </div>
-
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Kuasar</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="http://resilientedigital.online">Resieliente Digital</a>
-      </div>
-    </div>
-  </footer><!-- #footer -->
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Kuasar</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="http://resilientedigital.online">Resieliente Digital</a>
+            </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<!-- Uncomment below if you want to use a preloader -->
-<!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below if you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
 
-<!-- JavaScript Libraries -->
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/mobile-nav/mobile-nav.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-<!-- Contact Form JavaScript File -->
-<script src="contactform/contactform.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
 
-<!-- Template Main Javascript File -->
-<script src="js/main.js"></script>
-  <script>
-      var typed3 = new Typed('#typed3', {
-      strings: ["Premium hardware.", "Large performance.", "Fully dedicated."],
-      typeSpeed: 50,
-      backSpeed: 20,
-      smartBackspace: true,
-      loop: true
-      });
-  </script>
-    
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script>
+        var typed3 = new Typed('#typed3', {
+            strings: ["Premium hardware.", "Large performance.", "Fully dedicated."],
+            typeSpeed: 50,
+            backSpeed: 20,
+            smartBackspace: true,
+            loop: true
+        });
+    </script>
+
 </body>
+
 </html>

@@ -864,6 +864,12 @@ h6 {
     width: 50%;
 }
 
+@media(min-width: 992px) {
+    .section-header p {
+        padding-bottom: 0px;
+    }
+}
+
 .mainLogo {
     display: block;
     padding-bottom: 40px;
@@ -1134,7 +1140,7 @@ h6 {
     margin: 0;
     background: #004584;
     background-image: url(../img/clients/Artboard\ 2.svg);
-    height: 250px;
+    /*height: 250px;*/
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
