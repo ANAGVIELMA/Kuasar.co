@@ -4,7 +4,7 @@ if(isset($_POST['email'])) {
 <bold>// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias</bold>
 $email_to = "anagabrielavielma@gmail.com";
 $email_subject = "Contacto desde el sitio web";
-
+$email_from= $_POST['email']; 
 <bold>// Aquí se deberían validar los datos ingresados por el usuario</bold>
 if(!isset($_POST['name']) ||
 !isset($_POST['email']) ||
@@ -23,7 +23,7 @@ $email_message .= "Asunto: " . $_POST['subject'] . "\n";
 $email_message .= "Mensaje: " . $_POST['message'] . "\n\n";
 
 
-<bold>// Ahora se envía el e-mail usando la función mail() de PHP</bold>
+// Ahora se envía el e-mail usando la función mail() de PHP</bold>
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
